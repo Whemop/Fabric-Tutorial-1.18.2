@@ -10,13 +10,13 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
     // Mythril Ingot
     public static final Item MYTHRIL_INGOT = registerItem("mythril_ingot",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     // Mythril Nugget
     public static final Item MYTHRIL_NUGGET = registerItem("mythril_nugget",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     // Raw Mythril
     public static final Item RAW_MYTHRIL = registerItem("raw_mythril",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
 
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);

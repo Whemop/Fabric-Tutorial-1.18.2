@@ -10,24 +10,25 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.whemop.tutorialmod.TutorialMod;
+import net.whemop.tutorialmod.item.ModItemGroup;
 
 public class ModBlocks {
 
     // Mythril Block
     public static final Block MYTHRIL_BLOCK = registerBlock("mythril_block",
-        new Block(FabricBlockSettings.of(Material.METAL).strength(5f).requiresTool()), ItemGroup.MISC);
+        new Block(FabricBlockSettings.of(Material.METAL).strength(5f).requiresTool()), ModItemGroup.MYTHRIL);
     // Mythril Ore
     public static final Block MYTHRIL_ORE = registerBlock("mythril_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ItemGroup.MISC);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
     // Deepslate Mythril Ore
     public static final Block DEEPSLATE_MYTHRIL_ORE = registerBlock("deepslate_mythril_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(4.5f).requiresTool()), ItemGroup.MISC);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4.5f).requiresTool()), ModItemGroup.MYTHRIL);
     // Netherrack Mythril Ore
     public static final Block NETHERRACK_MYTHRIL_ORE = registerBlock("netherrack_mythril_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ItemGroup.MISC);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
     // Raw Mythril Block
     public static final Block RAW_MYTHRIL_BLOCK = registerBlock("raw_mythril_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ItemGroup.MISC);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
