@@ -22,6 +22,9 @@ public class ModBlocks {
     // Deepslate Mythril Ore
     public static final Block DEEPSLATE_MYTHRIL_ORE = registerBlock("deepslate_mythril_ore",
             new Block(FabricBlockSettings.of(Material.METAL).strength(4.5f).requiresTool()), ItemGroup.MISC);
+    // Netherrack Mythril Ore
+    public static final Block NETHERRACK_MYTHRIL_ORE = registerBlock("netherrack_mythril_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4.5f).requiresTool()), ItemGroup.MISC);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
