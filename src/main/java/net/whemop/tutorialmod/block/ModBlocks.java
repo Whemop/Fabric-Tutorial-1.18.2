@@ -13,11 +13,14 @@ import net.whemop.tutorialmod.TutorialMod;
 
 public class ModBlocks {
 
-    //Mythril Block
+    // Mythril Block
     public static final Block MYTHRIL_BLOCK = registerBlock("mythril_block",
-        new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.MISC);
-
+        new Block(FabricBlockSettings.of(Material.METAL).strength(5f).requiresTool()), ItemGroup.MISC);
+    // Mythril Ore
     public static final Block MYTHRIL_ORE = registerBlock("mythril_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ItemGroup.MISC);
+    // Deepslate Mythril Ore
+    public static final Block DEEPSLATE_MYTHRIL_ORE = registerBlock("deepslate_mythril_ore",
             new Block(FabricBlockSettings.of(Material.METAL).strength(4.5f).requiresTool()), ItemGroup.MISC);
 
 

@@ -4,5 +4,6 @@
   "item.tutorialmod.raw_mythril": "Raw Mythril",
 
   "block.tutorialmod.mythril_block": "Mythril Block",
-  "block.tutorialmod.mythril_ore": "Mythril Ore"
+  "block.tutorialmod.mythril_ore": "Mythril Ore",
+  "block.tutorialmod.deepslate_mythril_ore": "Deepslate Mythril Ore"
 }
