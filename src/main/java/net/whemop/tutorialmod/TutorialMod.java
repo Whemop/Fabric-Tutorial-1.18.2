@@ -5,7 +5,7 @@ import net.whemop.tutorialmod.block.ModBlocks;
 import net.whemop.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-// Test comment for GitHub verification
+
 public class TutorialMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
