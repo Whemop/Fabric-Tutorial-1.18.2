@@ -25,6 +25,9 @@ public class ModItems {
     // Lilac Flower Bulb
     public static final Item LILAC_FLOWER_BULB = registerItem("lilac_flower_bulb",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+    // Grape
+    public static final Item GRAPE = registerItem("grape",
+            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL).food(ModFoodComponents.GRAPE)));
 
 
     public static Item registerItem(String name, Item item) {
