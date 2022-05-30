@@ -46,7 +46,7 @@ public class DowsingRodItem extends Item {
 
     private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block blockBelow) {
         player.sendMessage(new LiteralText("Found " + blockBelow.asItem().getName().getString() + " at " +
-                "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"), false);
+                "(" + blockPos.getX() + ", " + blockPos.getY() + ", " + blockPos.getZ() + ")"), false);
     }
 
     private boolean isValuableBlock(Block block) {
