@@ -10,6 +10,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.whemop.tutorialmod.TutorialMod;
+import net.whemop.tutorialmod.block.custom.SpeedyBlock;
 import net.whemop.tutorialmod.item.ModItemGroup;
 
 public class ModBlocks {
@@ -29,6 +30,9 @@ public class ModBlocks {
     // Raw Mythril Block
     public static final Block RAW_MYTHRIL_BLOCK = registerBlock("raw_mythril_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
+    // Speedy Block
+    public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
+            new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
