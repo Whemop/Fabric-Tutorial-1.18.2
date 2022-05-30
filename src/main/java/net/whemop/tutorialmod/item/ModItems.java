@@ -8,10 +8,7 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.whemop.tutorialmod.TutorialMod;
 import net.minecraft.util.registry.Registry;
-import net.whemop.tutorialmod.item.custom.DowsingRodItem;
-import net.whemop.tutorialmod.item.custom.ModAxeItem;
-import net.whemop.tutorialmod.item.custom.ModHoeItem;
-import net.whemop.tutorialmod.item.custom.ModPickaxeItem;
+import net.whemop.tutorialmod.item.custom.*;
 import org.lwjgl.system.CallbackI;
 
 public class ModItems {
@@ -25,7 +22,7 @@ public class ModItems {
     public static final Item RAW_MYTHRIL = registerItem("raw_mythril",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     // Dowsing Rod
-    public static final Item DOWNSING_ROD = registerItem("dowsing_rod",
+    public static final Item DOWSING_ROD = registerItem("dowsing_rod",
             new DowsingRodItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxDamage(16)));
     // Lilac Flower Bulb
     public static final Item LILAC_FLOWER_BULB = registerItem("lilac_flower_bulb",
@@ -35,7 +32,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL).food(ModFoodComponents.GRAPE)));
     // Mythril Sword
     public static final Item MYTHRIL_SWORD = registerItem("mythril_sword",
-            new SwordItem(ModToolMaterials.MYTHRIL, 1, 2f, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+            new ModSlownessSwordItem(ModToolMaterials.MYTHRIL, 1, 2f, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     // Mythril Pickaxe
     public static final Item MYTHRIL_PICKAXE = registerItem("mythril_pickaxe",
             new ModPickaxeItem(ModToolMaterials.MYTHRIL, 2, 2f, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
