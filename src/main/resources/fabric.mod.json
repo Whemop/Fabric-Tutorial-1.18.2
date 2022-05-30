@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.whemop.tutorialmod.TutorialMod"
+    ],
+    "client": [
+      "net.whemop.tutorialmod.TutorialClientMod"
     ]
   },
   "mixins": [

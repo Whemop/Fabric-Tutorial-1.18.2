@@ -9,9 +9,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.whemop.tutorialmod.TutorialMod;
-import net.whemop.tutorialmod.block.custom.ModPressurePlateBlock;
-import net.whemop.tutorialmod.block.custom.ModStoneButtonBlock;
-import net.whemop.tutorialmod.block.custom.SpeedyBlock;
+import net.whemop.tutorialmod.block.custom.*;
 import net.whemop.tutorialmod.item.ModItemGroup;
 
 public class ModBlocks {
@@ -49,6 +47,18 @@ public class ModBlocks {
     // Mythril Wall
     public static final Block MYTHRIL_WALL = registerBlock("mythril_wall",
             new WallBlock(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
+    // Mythril Slab
+    public static final Block MYTHRIL_SLAB = registerBlock("mythril_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
+    // Mythril Stairs
+    public static final Block MYTHRIL_STAIRS = registerBlock("mythril_stairs",
+            new ModStairsBlock(ModBlocks.MYTHRIL_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
+    // Kaupen Door
+    public static final Block KAUPEN_DOOR = registerBlock("kaupen_door",
+            new ModDoorBlock(FabricBlockSettings.of(Material.WOOD).strength(3f).requiresTool().nonOpaque()), ModItemGroup.MYTHRIL);
+    // Kaupen Trapdoor
+    public static final Block KAUPEN_TRAPDOOR = registerBlock("kaupen_trapdoor",
+            new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(3f).requiresTool().nonOpaque()), ModItemGroup.MYTHRIL);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
