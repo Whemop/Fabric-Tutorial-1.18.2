@@ -22,6 +22,9 @@ public class ModItems {
     // Dowsing Rod
     public static final Item DOWNSING_ROD = registerItem("dowsing_rod",
             new DowsingRodItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL).maxDamage(16)));
+    // Lilac Flower Bulb
+    public static final Item LILAC_FLOWER_BULB = registerItem("lilac_flower_bulb",
+            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
 
 
     public static Item registerItem(String name, Item item) {
