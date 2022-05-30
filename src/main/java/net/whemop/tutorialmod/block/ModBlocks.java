@@ -2,14 +2,15 @@ package net.whemop.tutorialmod.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.whemop.tutorialmod.TutorialMod;
+import net.whemop.tutorialmod.block.custom.ModPressurePlateBlock;
+import net.whemop.tutorialmod.block.custom.ModStoneButtonBlock;
 import net.whemop.tutorialmod.block.custom.SpeedyBlock;
 import net.whemop.tutorialmod.item.ModItemGroup;
 
@@ -33,6 +34,21 @@ public class ModBlocks {
     // Speedy Block
     public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
             new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
+    // Mythril Button Block
+    public static final Block MYTHRIL_BUTTON = registerBlock("mythril_button",
+            new ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool().noCollision()), ModItemGroup.MYTHRIL);
+    // Mythril Pressure Plate
+    public static final Block MYTHRIL_PRESSURE_PLATE = registerBlock("mythril_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
+    // Mythril Fence
+    public static final Block MYTHRIL_FENCE = registerBlock("mythril_fence",
+            new FenceBlock(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
+    // Mythril Fence Gate
+    public static final Block MYTHRIL_FENCE_GATE = registerBlock("mythril_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
+    // Mythril Wall
+    public static final Block MYTHRIL_WALL = registerBlock("mythril_wall",
+            new WallBlock(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), ModItemGroup.MYTHRIL);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
