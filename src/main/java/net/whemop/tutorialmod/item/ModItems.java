@@ -1,10 +1,8 @@
 package net.whemop.tutorialmod.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.SwordItem;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.whemop.tutorialmod.TutorialMod;
 import net.minecraft.util.registry.Registry;
@@ -45,6 +43,20 @@ public class ModItems {
     // Mythril Hoe
     public static final Item MYTHRIL_HOE = registerItem("mythril_hoe",
             new ModHoeItem(ModToolMaterials.MYTHRIL, 0, 0f, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+    // Mythril Helmet
+    public static final Item MYTHRIL_HELMET = registerItem("mythril_helmet",
+            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+    // Mythril Chestplate
+    public static final Item MYTHRIL_CHESTPLATE = registerItem("mythril_chestplate",
+            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+    // Mythril Leggings
+    public static final Item MYTHRIL_LEGGINGS = registerItem("mythril_leggings",
+            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+    // Mythril Boots
+    public static final Item MYTHRIL_BOOTS = registerItem("mythril_boots",
+            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+
+
 
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
