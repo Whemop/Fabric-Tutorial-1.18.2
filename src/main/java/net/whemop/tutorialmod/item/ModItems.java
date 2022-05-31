@@ -48,13 +48,25 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     // Mythril Chestplate
     public static final Item MYTHRIL_CHESTPLATE = registerItem("mythril_chestplate",
-            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+            new ModArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     // Mythril Leggings
     public static final Item MYTHRIL_LEGGINGS = registerItem("mythril_leggings",
             new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
     // Mythril Boots
     public static final Item MYTHRIL_BOOTS = registerItem("mythril_boots",
             new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+    // Fortifying Helmet
+    public static final Item FORTIFY_HELMET = registerItem("fortify_helmet",
+            new ArmorItem(ModArmorMaterials.FORTIFY, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+    // Fortifying Chestplate
+    public static final Item FORTIFY_CHESTPLATE = registerItem("fortify_chestplate",
+            new FortifyingArmorItem(ModArmorMaterials.FORTIFY, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+    // Fortifying Leggings
+    public static final Item FORTIFY_LEGGINGS = registerItem("fortify_leggings",
+            new ArmorItem(ModArmorMaterials.FORTIFY, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
+    // Fortifying Boots
+    public static final Item FORTIFY_BOOTS = registerItem("fortify_boots",
+            new ArmorItem(ModArmorMaterials.FORTIFY, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.MYTHRIL)));
 
 
 

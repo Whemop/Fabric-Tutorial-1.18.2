@@ -14,6 +14,10 @@
   "item.tutorialmod.mythril_chestplate": "Mythril Chestplate",
   "item.tutorialmod.mythril_leggings": "Mythril Leggings",
   "item.tutorialmod.mythril_boots": "Mythril Boots",
+  "item.tutorialmod.fortify_helmet": "Fortifying Helmet",
+  "item.tutorialmod.fortify_chestplate": "Fortifying Chestplate",
+  "item.tutorialmod.fortify_leggings": "Fortifying Leggings",
+  "item.tutorialmod.fortify_boots": "Fortifying Boots",
 
   "block.tutorialmod.mythril_block": "Mythril Block",
   "block.tutorialmod.mythril_ore": "Mythril Ore",

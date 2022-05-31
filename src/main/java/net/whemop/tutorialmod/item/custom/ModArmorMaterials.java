@@ -12,7 +12,8 @@ import net.whemop.tutorialmod.item.ModItems;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    MYTHRIL("mythril", 16, new int[]{1, 3, 7, 2}, 28, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0f, 0.0f, () -> Ingredient.ofItems(ModItems.MYTHRIL_INGOT));
+    MYTHRIL("mythril", 16, new int[]{1, 3, 7, 2}, 28, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0f, 0.0f, () -> Ingredient.ofItems(ModItems.MYTHRIL_INGOT)),
+    FORTIFY("fortify", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
 
     private static final int[] BASE_DURABILITY;
     private final String name;
